@@ -57,7 +57,8 @@ class HomeScreen extends StatelessWidget {
               description: 'History of your scanned links',
               icon: Icons.history_rounded,
               color: AppColors.blueAction,
-              onTap: () {},
+              onTap: () {
+              },
             ),
           ],
         ),

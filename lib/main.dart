@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/screens/home/home_screen.dart';
 import 'package:threat_blocker/screens/notifications/notifications_screen.dart';
 import 'package:threat_blocker/screens/splash/splash_screen.dart';
 import 'package:threat_blocker/screens/submit_link/submit_link_screen.dart';
 import 'package:threat_blocker/theme/app_theme.dart';
+import 'screens/auth/Login/Login_Screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,10 +25,15 @@ class MyApp extends StatelessWidget {
         SplashScreen.routeName: (context) => const SplashScreen(),
         SubmitLinkScreen.routeName:(_)=>SubmitLinkScreen(),
         NotificationsScreen.routeName:(_)=>const NotificationsScreen(),
+        HomeScreen.routeName:(_)=>const HomeScreen(),
+        LoginScreen.routeName:(_)=>const LoginScreen (),
+
 
       },
     );
   }
 }
+
+
 
 

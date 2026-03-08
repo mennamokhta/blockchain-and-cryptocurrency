@@ -40,7 +40,7 @@ class BuildDetailItem extends StatelessWidget {
                 ],
               ),
             ),
-            StatusBadge(label: 'Warning', color: color),
+           // StatusBadge(label: 'Warning', color: color),
           ],
         ),
       ),
