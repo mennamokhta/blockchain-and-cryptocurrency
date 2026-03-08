@@ -1,6 +1,6 @@
 import 'dart:core';
 import 'package:flutter/material.dart';
-import '../../widgets/custom_widgets.dart';
+import '../../widgets/quick_action_card.dart';
 
 class BuildDetailItem extends StatelessWidget {
   final String title;

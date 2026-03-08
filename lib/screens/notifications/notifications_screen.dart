@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import  'package:flutter/material.dart';
 import '../../theme/app_colors.dart';
 import '../../theme/app_text_styles.dart';
 
@@ -51,7 +51,7 @@ class NotificationsScreen extends StatelessWidget {
                 leading: Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: (item['color'] as Color).withOpacity(0.1),
+                    color: (item[''] as Color).withOpacity(0.1),
                     shape: BoxShape.circle,
                   ),
                   child: Icon(item['icon'] as IconData, color: item['color'] as Color),

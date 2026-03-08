@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/widgets/test_text_form.dart';
 import '../../theme/app_text_styles.dart';
 import '../analysis_status/analysis_status_screen.dart';
 
@@ -35,12 +36,17 @@ class SubmitLinkScreen extends StatelessWidget {
               style: AppTextStyles.bodyMedium14.copyWith(color: Colors.grey),
             ),
             const SizedBox(height: 40),
-           TextField(
-              decoration: InputDecoration(
-                hintText: 'https://example.com/login',
-                prefixIcon: Icon(Icons.search_rounded),
-              ),
-            ),
+           TestTextFormField(validator:
+          (value) {
+            if (value == null || value.isEmpty) {
+              return "please enter URL";
+            }
+            return null;
+
+          },
+             hintText: 'https://example.com/login',
+             prefixIcon: Icon(Icons.search_rounded),
+           ),
             const Spacer(),
             FilledButton(
               onPressed: () => Navigator.push(
